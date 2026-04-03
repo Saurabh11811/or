@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORION Platform</title>
+    <meta
+      name="description"
+      content="ORION is the strategy-to-execution intelligence layer for enterprise engineering."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/site.css" />
+  </head>
+  <body class="bg-white text-slate-950">
+    <nav
+      id="site-nav"
+      class="fixed left-0 right-0 top-0 z-50 bg-transparent transition-all duration-300"
+    >
+      <div class="mx-auto flex h-[72px] max-w-[1200px] items-center justify-between px-6">
+        <a href="#" class="flex items-center gap-2">
+          <div
+            class="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#1E40AF] to-[#059669]"
+          >
+            <span class="text-white" style="font-size: 14px; font-weight: 800">O</span>
+          </div>
+          <span
+            class="text-[#0f172a]"
+            style="font-size: 20px; font-weight: 700; letter-spacing: -0.02em"
+            >ORION</span
+          >
+        </a>
+
+        <div class="hidden items-center gap-8 md:flex">
+          <a
+            href="#how-it-works"
+            class="text-[#475569] transition-colors hover:text-[#1E40AF]"
+            style="font-size: 14px; font-weight: 500"
+            >Platform</a
+          >
+          <a
+            href="#health-score"
+            class="text-[#475569] transition-colors hover:text-[#1E40AF]"
+            style="font-size: 14px; font-weight: 500"
+            >Health Score</a
+          >
+          <a
+            href="#modules"
+            class="text-[#475569] transition-colors hover:text-[#1E40AF]"
+            style="font-size: 14px; font-weight: 500"
+            >Modules</a
+          >
+          <a
+            href="#roi"
+            class="text-[#475569] transition-colors hover:text-[#1E40AF]"
+            style="font-size: 14px; font-weight: 500"
+            >ROI</a
+          >
+          <a
+            href="#compare"
+            class="text-[#475569] transition-colors hover:text-[#1E40AF]"
+            style="font-size: 14px; font-weight: 500"
+            >Compare</a
+          >
+        </div>
+
+        <div class="hidden md:block">
+          <a
+            href="#demo"
+            class="inline-flex items-center rounded-lg bg-[#1E40AF] px-5 py-2.5 text-white transition-colors hover:bg-[#1e3a8a]"
+            style="font-size: 14px; font-weight: 600"
+            >Request Demo</a
+          >
+        </div>
+
+        <button
+          id="mobile-toggle"
+          class="text-[#0f172a] md:hidden"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Toggle navigation"
+        >
+          <span id="menu-open-icon" class="block"><i data-lucide="menu"></i></span>
+          <span id="menu-close-icon" class="hidden"><i data-lucide="x"></i></span>
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="hidden space-y-3 border-t border-[#e2e8f0] bg-white px-6 py-4 md:hidden"
+      >
+        <a
+          href="#how-it-works"
+          class="block text-[#475569] hover:text-[#1E40AF]"
+          style="font-size: 15px; font-weight: 500"
+          >Platform</a
+        >
+        <a
+          href="#health-score"
+          class="block text-[#475569] hover:text-[#1E40AF]"
+          style="font-size: 15px; font-weight: 500"
+          >Health Score</a
+        >
+        <a
+          href="#modules"
+          class="block text-[#475569] hover:text-[#1E40AF]"
+          style="font-size: 15px; font-weight: 500"
+          >Modules</a
+        >
+        <a
+          href="#roi"
+          class="block text-[#475569] hover:text-[#1E40AF]"
+          style="font-size: 15px; font-weight: 500"
+          >ROI</a
+        >
+        <a
+          href="#compare"
+          class="block text-[#475569] hover:text-[#1E40AF]"
+          style="font-size: 15px; font-weight: 500"
+          >Compare</a
+        >
+        <a
+          href="#demo"
+          class="mt-3 block rounded-lg bg-[#1E40AF] px-5 py-2.5 text-center text-white"
+          style="font-size: 14px; font-weight: 600"
+          >Request Demo</a
+        >
+      </div>
+    </nav>
+
+    <main>
+      <section class="relative overflow-hidden pb-20 pt-[120px] md:pb-28">
+        <div
+          class="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#eff6ff] via-white to-white"
+        ></div>
+        <div
+          class="pointer-events-none absolute right-0 top-0 h-[600px] w-[600px] rounded-full bg-[#1E40AF]/5 blur-[120px]"
+        ></div>
+        <div
+          class="pointer-events-none absolute bottom-0 left-0 h-[400px] w-[400px] rounded-full bg-[#059669]/5 blur-[100px]"
+        ></div>
+
+        <div class="relative mx-auto max-w-[1200px] px-6 text-center">
+          <div
+            class="mb-6 inline-flex items-center gap-2 rounded-full bg-[#1E40AF]/10 px-4 py-1.5 text-[#1E40AF]"
+            style="font-size: 13px; font-weight: 600"
+          >
+            <span class="h-2 w-2 rounded-full bg-[#059669] animate-pulse"></span>
+            Strategy-to-Execution Intelligence Platform
+          </div>
+
+          <h1
+            class="mb-6 text-[#0f172a]"
+            style="font-size: clamp(36px, 5vw, 64px); font-weight: 800; line-height: 1.1; letter-spacing: -0.03em"
+          >
+            One Platform. One Score.<br />
+            <span class="bg-gradient-to-r from-[#1E40AF] to-[#059669] bg-clip-text text-transparent"
+              >One Truth.</span
+            >
+          </h1>
+
+          <p
+            class="mx-auto mb-10 max-w-[720px] text-[#475569]"
+            style="font-size: 18px; line-height: 1.7"
+          >
+            ORION is the strategy-to-execution intelligence layer for enterprise engineering. It
+            connects your tools, scores your health, and surfaces the decisions that matter — in
+            30 seconds, not 3 days.
+          </p>
+
+          <div class="mb-14 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <a
+              href="#demo"
+              class="inline-flex items-center rounded-xl bg-[#1E40AF] px-8 py-3.5 text-white transition-all hover:bg-[#1e3a8a] hover:shadow-lg"
+              style="font-size: 16px; font-weight: 600"
+              >Request a Demo</a
+            >
+            <a
+              href="#how-it-works"
+              class="inline-flex items-center rounded-xl border-2 border-[#1E40AF] px-8 py-3.5 text-[#1E40AF] transition-all hover:bg-[#1E40AF]/5"
+              style="font-size: 16px; font-weight: 600"
+              >Explore the Platform</a
+            >
+          </div>
+
+          <div class="mx-auto mb-14 max-w-[960px]">
+            <div
+              class="overflow-hidden rounded-2xl border border-[#e2e8f0] bg-white shadow-2xl"
+            >
+              <div class="flex items-center gap-2 border-b border-[#e2e8f0] bg-[#f8fafc] px-4 py-3">
+                <span class="h-3 w-3 rounded-full bg-[#fca5a5]"></span>
+                <span class="h-3 w-3 rounded-full bg-[#fde68a]"></span>
+                <span class="h-3 w-3 rounded-full bg-[#86efac]"></span>
+                <span
+                  class="mx-4 flex h-7 flex-1 items-center justify-center rounded-md bg-[#e2e8f0] text-[#94a3b8]"
+                  style="font-size: 12px"
+                  >app.orion-platform.io/portfolio</span
+                >
+              </div>
+              <img
+                src="./assets/images/portfolio-dashboard.jpg"
+                alt="ORION Portfolio Dashboard — Unified Health View"
+                class="aspect-[16/9] h-auto w-full object-cover"
+              />
+            </div>
+          </div>
+
+          <div class="mx-auto grid max-w-[900px] grid-cols-2 gap-4 md:grid-cols-4">
+            <div
+              class="flex flex-col items-center gap-2 rounded-xl border border-[#e2e8f0] bg-white px-4 py-5 transition-all hover:border-[#1E40AF]/30 hover:shadow-md"
+            >
+              <i data-lucide="zap" class="text-[#1E40AF]"></i>
+              <span class="text-center text-[#334155]" style="font-size: 13px; font-weight: 600"
+                >13 Modules, 37+ Screens</span
+              >
+            </div>
+            <div
+              class="flex flex-col items-center gap-2 rounded-xl border border-[#e2e8f0] bg-white px-4 py-5 transition-all hover:border-[#1E40AF]/30 hover:shadow-md"
+            >
+              <i data-lucide="bar-chart-3" class="text-[#1E40AF]"></i>
+              <span class="text-center text-[#334155]" style="font-size: 13px; font-weight: 600"
+                >10-Dimension Health Scoring</span
+              >
+            </div>
+            <div
+              class="flex flex-col items-center gap-2 rounded-xl border border-[#e2e8f0] bg-white px-4 py-5 transition-all hover:border-[#1E40AF]/30 hover:shadow-md"
+            >
+              <i data-lucide="brain" class="text-[#1E40AF]"></i>
+              <span class="text-center text-[#334155]" style="font-size: 13px; font-weight: 600"
+                >AI-Powered Insights</span
+              >
+            </div>
+            <div
+              class="flex flex-col items-center gap-2 rounded-xl border border-[#e2e8f0] bg-white px-4 py-5 transition-all hover:border-[#1E40AF]/30 hover:shadow-md"
+            >
+              <i data-lucide="rocket" class="text-[#1E40AF]"></i>
+              <span class="text-center text-[#334155]" style="font-size: 13px; font-weight: 600"
+                >Days to Value, Not Months</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#f8fafc] py-20 md:py-28">
+        <div class="mx-auto max-w-[1200px] px-6">
+          <h2
+            class="mx-auto mb-14 max-w-[700px] text-center text-[#0f172a]"
+            style="font-size: clamp(28px, 3.5vw, 40px); font-weight: 700; line-height: 1.2"
+          >
+            Your Engineering Organization Is Data-Rich and Insight-Poor
+          </h2>
+
+          <div class="mb-12 grid gap-6 md:grid-cols-3">
+            <div
+              class="group rounded-2xl border border-[#e2e8f0] bg-white p-8 transition-all hover:border-[#fca5a5]/50 hover:shadow-lg"
+            >
+              <div
+                class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#fef2f2] transition-colors group-hover:bg-[#fee2e2]"
+              >
+                <i data-lucide="unplug" class="text-[#dc2626]"></i>
+              </div>
+              <h3 class="mb-3 text-[#0f172a]" style="font-size: 22px; font-weight: 700">
+                5–7 Disconnected Tools
+              </h3>
+              <p class="text-[#64748b]" style="font-size: 15px; line-height: 1.7">
+                Jira, SonarQube, Confluence, security scanners, spreadsheets — truth is scattered
+                across systems that don't talk to each other.
+              </p>
+            </div>
+
+            <div
+              class="group rounded-2xl border border-[#e2e8f0] bg-white p-8 transition-all hover:border-[#fca5a5]/50 hover:shadow-lg"
+            >
+              <div
+                class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#fef2f2] transition-colors group-hover:bg-[#fee2e2]"
+              >
+                <i data-lucide="clock-3" class="text-[#dc2626]"></i>
+              </div>
+              <h3 class="mb-3 text-[#0f172a]" style="font-size: 22px; font-weight: 700">
+                2–3 Day Reporting Cycles
+              </h3>
+              <p class="text-[#64748b]" style="font-size: 15px; line-height: 1.7">
+                By the time leadership sees a number, it's already changed. Decisions are made on
+                stale evidence.
+              </p>
+            </div>
+
+            <div
+              class="group rounded-2xl border border-[#e2e8f0] bg-white p-8 transition-all hover:border-[#fca5a5]/50 hover:shadow-lg"
+            >
+              <div
+                class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#fef2f2] transition-colors group-hover:bg-[#fee2e2]"
+              >
+                <i data-lucide="calendar-x-2" class="text-[#dc2626]"></i>
+              </div>
+              <h3 class="mb-3 text-[#0f172a]" style="font-size: 22px; font-weight: 700">
+                80–120 Days/Year Lost
+              </h3>
+              <p class="text-[#64748b]" style="font-size: 15px; line-height: 1.7">
+                Senior engineers assemble decks instead of removing impediments. Reporting theater
+                consumes your most expensive people.
+              </p>
+            </div>
+          </div>
+
+          <div class="mx-auto max-w-[700px] text-center">
+            <div
+              class="inline-block rounded-xl border border-[#1E40AF]/10 bg-gradient-to-r from-[#1E40AF]/5 to-[#059669]/5 px-8 py-4"
+            >
+              <p class="text-[#1e293b] italic" style="font-size: 18px; font-weight: 500">
+                "The data exists. The insight does not.
+                <span class="text-[#1E40AF]" style="font-weight: 700">ORION eliminates that gap.</span>"
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="py-20 md:py-28">
+        <div class="mx-auto max-w-[1200px] px-6">
+          <h2
+            class="mb-4 text-center text-[#0f172a]"
+            style="font-size: clamp(28px, 3.5vw, 40px); font-weight: 700; line-height: 1.2"
+          >
+            Five Stages. From Raw Data to Leadership Decisions.
+          </h2>
+          <p
+            class="mx-auto mb-16 max-w-[600px] text-center text-[#64748b]"
+            style="font-size: 16px"
+          >
+            ORION transforms fragmented engineering data into actionable intelligence through a
+            seamless pipeline.
+          </p>
+
+          <div class="mb-16 flex flex-col items-stretch gap-4 md:flex-row">
+            <div class="flex flex-1 flex-col items-center gap-4 md:flex-row">
+              <div
+                class="flex-1 rounded-2xl border border-[#e2e8f0] bg-white p-6 text-center transition-all hover:border-[#1E40AF]/20 hover:shadow-lg"
+              >
+                <div
+                  class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#1E40AF]/10"
+                >
+                  <i data-lucide="database" class="text-[#1E40AF]"></i>
+                </div>
+                <h4 class="mb-2 text-[#0f172a]" style="font-size: 18px; font-weight: 700">
+                  Ingest
+                </h4>
+                <p class="text-[#64748b]" style="font-size: 13px; line-height: 1.6">
+                  Connects to Jira, Confluence, SonarQube, and security scanners.
+                </p>
+              </div>
+              <i data-lucide="arrow-right" class="hidden shrink-0 text-[#cbd5e1] md:block"></i>
+            </div>
+
+            <div class="flex flex-1 flex-col items-center gap-4 md:flex-row">
+              <div
+                class="flex-1 rounded-2xl border border-[#e2e8f0] bg-white p-6 text-center transition-all hover:border-[#1E40AF]/20 hover:shadow-lg"
+              >
+                <div
+                  class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#2563eb]/10"
+                >
+                  <i data-lucide="layers" class="text-[#2563eb]"></i>
+                </div>
+                <h4 class="mb-2 text-[#0f172a]" style="font-size: 18px; font-weight: 700">
+                  Enrich
+                </h4>
+                <p class="text-[#64748b]" style="font-size: 13px; line-height: 1.6">
+                  Normalizes data. Maps stories to initiatives to strategies.
+                </p>
+              </div>
+              <i data-lucide="arrow-right" class="hidden shrink-0 text-[#cbd5e1] md:block"></i>
+            </div>
+
+            <div class="flex flex-1 flex-col items-center gap-4 md:flex-row">
+              <div
+                class="flex-1 rounded-2xl border border-[#e2e8f0] bg-white p-6 text-center transition-all hover:border-[#1E40AF]/20 hover:shadow-lg"
+              >
+                <div
+                  class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#059669]/10"
+                >
+                  <i data-lucide="gauge" class="text-[#059669]"></i>
+                </div>
+                <h4 class="mb-2 text-[#0f172a]" style="font-size: 18px; font-weight: 700">
+                  Score
+                </h4>
+                <p class="text-[#64748b]" style="font-size: 13px; line-height: 1.6">
+                  Applies a unified 0–100 health model across 10 weighted dimensions.
+                </p>
+              </div>
+              <i data-lucide="arrow-right" class="hidden shrink-0 text-[#cbd5e1] md:block"></i>
+            </div>
+
+            <div class="flex flex-1 flex-col items-center gap-4 md:flex-row">
+              <div
+                class="flex-1 rounded-2xl border border-[#e2e8f0] bg-white p-6 text-center transition-all hover:border-[#1E40AF]/20 hover:shadow-lg"
+              >
+                <div
+                  class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#0d9488]/10"
+                >
+                  <i data-lucide="lightbulb" class="text-[#0d9488]"></i>
+                </div>
+                <h4 class="mb-2 text-[#0f172a]" style="font-size: 18px; font-weight: 700">
+                  Insights
+                </h4>
+                <p class="text-[#64748b]" style="font-size: 13px; line-height: 1.6">
+                  LLM-powered analysis generates human-readable signals with trend detection.
+                </p>
+              </div>
+              <i data-lucide="arrow-right" class="hidden shrink-0 text-[#cbd5e1] md:block"></i>
+            </div>
+
+            <div class="flex flex-1 flex-col items-center gap-4 md:flex-row">
+              <div
+                class="flex-1 rounded-2xl border border-[#e2e8f0] bg-white p-6 text-center transition-all hover:border-[#1E40AF]/20 hover:shadow-lg"
+              >
+                <div
+                  class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#F59E0B]/10"
+                >
+                  <i data-lucide="target" class="text-[#F59E0B]"></i>
+                </div>
+                <h4 class="mb-2 text-[#0f172a]" style="font-size: 18px; font-weight: 700">
+                  Actions
+                </h4>
+                <p class="text-[#64748b]" style="font-size: 13px; line-height: 1.6">
+                  Surfaces prioritized recommendations linked to teams and stories.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mx-auto max-w-[900px]">
+            <div class="overflow-hidden rounded-2xl border border-[#e2e8f0] bg-white shadow-xl">
+              <div class="flex items-center gap-2 border-b border-[#e2e8f0] bg-[#f8fafc] px-4 py-3">
+                <span class="h-3 w-3 rounded-full bg-[#fca5a5]"></span>
+                <span class="h-3 w-3 rounded-full bg-[#fde68a]"></span>
+                <span class="h-3 w-3 rounded-full bg-[#86efac]"></span>
+                <span class="ml-4 text-[#94a3b8]" style="font-size: 12px"
+                  >ORION AI Insights — Severity-Ranked Signal Cards</span
+                >
+              </div>
+              <img
+                src="./assets/images/ai-insights.jpg"
+                alt="ORION AI Insights"
+                class="aspect-[16/9] w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="health-score" class="bg-[#f8fafc] py-20 md:py-28">
+        <div class="mx-auto max-w-[1200px] px-6">
+          <div class="mb-16 grid items-center gap-16 lg:grid-cols-2">
+            <div>
+              <h2
+                class="mb-6 text-[#0f172a]"
+                style="font-size: clamp(28px, 3.5vw, 40px); font-weight: 700; line-height: 1.2"
+              >
+                The Single Number That Tells the Truth
+              </h2>
+              <p class="mb-6 text-[#475569]" style="font-size: 16px; line-height: 1.8">
+                ORION computes a unified 0–100 composite health score across 10 weighted
+                categories. Every project, every team, every initiative — one standardized measure
+                of execution health.
+              </p>
+              <div class="mb-6 flex flex-wrap gap-3">
+                <span
+                  class="rounded-lg px-3 py-1.5"
+                  style="background-color: #dcfce7; color: #16a34a; font-size: 13px; font-weight: 600"
+                  >Green 80+</span
+                >
+                <span
+                  class="rounded-lg px-3 py-1.5"
+                  style="background-color: #fef9c3; color: #ca8a04; font-size: 13px; font-weight: 600"
+                  >Amber 60–79</span
+                >
+                <span
+                  class="rounded-lg px-3 py-1.5"
+                  style="background-color: #fee2e2; color: #dc2626; font-size: 13px; font-weight: 600"
+                  >Red &lt;60</span
+                >
+              </div>
+              <p class="text-[#64748b]" style="font-size: 14px; line-height: 1.7">
+                RAG classification enables instant triaging at every level — from individual stories
+                to the entire portfolio. Drill from portfolio → initiative → epic → story in
+                seconds.
+              </p>
+            </div>
+
+            <div class="flex items-center justify-center">
+              <div class="relative h-[280px] w-[280px]">
+                <svg viewBox="0 0 280 280" class="h-full w-full">
+                  <circle cx="140" cy="140" r="120" fill="none" stroke="#e2e8f0" stroke-width="18"></circle>
+                  <circle
+                    cx="140"
+                    cy="140"
+                    r="120"
+                    fill="none"
+                    stroke="url(#scoreGrad)"
+                    stroke-width="18"
+                    stroke-dasharray="588.1 753.98"
+                    stroke-linecap="round"
+                    transform="rotate(-90 140 140)"
+                  ></circle>
+                  <defs>
+                    <linearGradient id="scoreGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#1E40AF"></stop>
+                      <stop offset="100%" stop-color="#059669"></stop>
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <div class="absolute inset-0 flex flex-col items-center justify-center">
+                  <span class="text-[#0f172a]" style="font-size: 56px; font-weight: 800">78</span>
+                  <span class="text-[#64748b]" style="font-size: 14px; font-weight: 500"
+                    >Portfolio Score</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-5">
+            <div class="rounded-xl border border-[#e2e8f0] bg-white p-4 text-center transition-all hover:shadow-md">
+              <div class="mx-auto mb-3 h-1 w-8 rounded-full bg-[#1E40AF]"></div>
+              <p class="mb-1 text-[#0f172a]" style="font-size: 13px; font-weight: 600">Backlog Health</p>
+              <p class="text-[#94a3b8]" style="font-size: 12px; font-weight: 500">15%</p>
+            </div>
+            <div class="rounded-xl border border-[#e2e8f0] bg-white p-4 text-center transition-all hover:shadow-md">
+              <div class="mx-auto mb-3 h-1 w-8 rounded-full bg-[#dc2626]"></div>
+              <p class="mb-1 text-[#0f172a]" style="font-size: 13px; font-weight: 600">Risk Exposure</p>
+              <p class="text-[#94a3b8]" style="font-size: 12px; font-weight: 500">15%</p>
+            </div>
+            <div class="rounded-xl border border-[#e2e8f0] bg-white p-4 text-center transition-all hover:shadow-md">
+              <div class="mx-auto mb-3 h-1 w-8 rounded-full bg-[#059669]"></div>
+              <p class="mb-1 text-[#0f172a]" style="font-size: 13px; font-weight: 600">
+                Delivery Execution
+              </p>
+              <p class="text-[#94a3b8]" style="font-size: 12px; font-weight: 500">10%</p>
+            </div>
+            <div class="rounded-xl border border-[#e2e8f0] bg-white p-4 text-center transition-all hover:shadow-md">
+              <div class="mx-auto mb-3 h-1 w-8 rounded-full bg-[#2563eb]"></div>
+              <p class="mb-1 text-[#0f172a]" style="font-size: 13px; font-weight: 600">Predictability</p>
+              <p class="text-[#94a3b8]" style="font-size: 12px; font-weight: 500">10%</p>
+            </div>
+            <div class="rounded-xl border border-[#e2e8f0] bg-white p-4 text-center transition-all hover:shadow-md">
+              <div class="mx-auto mb-3 h-1 w-8 rounded-full bg-[#0d9488]"></div>
+              <p class="mb-1 text-[#0f172a]" style="font-size: 13px; font-weight: 600">Flow Efficiency</p>
+              <p class="text-[#94a3b8]" style="font-size: 12px; font-weight: 500">10%</p>
+            </div>
+            <div class="rounded-xl border border-[#e2e8f0] bg-white p-4 text-center transition-all hover:shadow-md">
+              <div class="mx-auto mb-3 h-1 w-8 rounded-full bg-[#7c3aed]"></div>
+              <p class="mb-1 text-[#0f172a]" style="font-size: 13px; font-weight: 600">Quality</p>
+              <p class="text-[#94a3b8]" style="font-size: 12px; font-weight: 500">10%</p>
+            </div>
+            <div class="rounded-xl border border-[#e2e8f0] bg-white p-4 text-center transition-all hover:shadow-md">
+              <div class="mx-auto mb-3 h-1 w-8 rounded-full bg-[#9333ea]"></div>
+              <p class="mb-1 text-[#0f172a]" style="font-size: 13px; font-weight: 600">Documentation</p>
+              <p class="text-[#94a3b8]" style="font-size: 12px; font-weight: 500">10%</p>
+            </div>
+            <div class="rounded-xl border border-[#e2e8f0] bg-white p-4 text-center transition-all hover:shadow-md">
+              <div class="mx-auto mb-3 h-1 w-8 rounded-full bg-[#0284c7]"></div>
+              <p class="mb-1 text-[#0f172a]" style="font-size: 13px; font-weight: 600">Team Distribution</p>
+              <p class="text-[#94a3b8]" style="font-size: 12px; font-weight: 500">10%</p>
+            </div>
+            <div class="rounded-xl border border-[#e2e8f0] bg-white p-4 text-center transition-all hover:shadow-md">
+              <div class="mx-auto mb-3 h-1 w-8 rounded-full bg-[#F59E0B]"></div>
+              <p class="mb-1 text-[#0f172a]" style="font-size: 13px; font-weight: 600">
+                Resource Utilization
+              </p>
+              <p class="text-[#94a3b8]" style="font-size: 12px; font-weight: 500">5%</p>
+            </div>
+            <div class="rounded-xl border border-[#e2e8f0] bg-white p-4 text-center transition-all hover:shadow-md">
+              <div class="mx-auto mb-3 h-1 w-8 rounded-full bg-[#ec4899]"></div>
+              <p class="mb-1 text-[#0f172a]" style="font-size: 13px; font-weight: 600">Morale</p>
+              <p class="text-[#94a3b8]" style="font-size: 12px; font-weight: 500">5%</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 md:py-28">
+        <div class="mx-auto max-w-[1200px] px-6">
+          <h2
+            class="mb-14 text-center text-[#0f172a]"
+            style="font-size: clamp(28px, 3.5vw, 40px); font-weight: 700; line-height: 1.2"
+          >
+            The Transformation
+          </h2>
+
+          <div class="mx-auto grid max-w-[960px] gap-6 md:grid-cols-2">
+            <div class="rounded-2xl border border-[#fecaca] bg-[#fff5f5] p-8">
+              <h3
+                class="mb-6 text-[#dc2626]"
+                style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase"
+              >
+                Before ORION
+              </h3>
+              <div class="space-y-4">
+                <div class="flex items-start gap-3">
+                  <div
+                    class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#fee2e2]"
+                  >
+                    <i data-lucide="x" class="h-[14px] w-[14px] text-[#dc2626]"></i>
+                  </div>
+                  <p class="text-[#64748b]" style="font-size: 15px; line-height: 1.6">
+                    2–3 days to assemble status
+                  </p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <div
+                    class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#fee2e2]"
+                  >
+                    <i data-lucide="x" class="h-[14px] w-[14px] text-[#dc2626]"></i>
+                  </div>
+                  <p class="text-[#64748b]" style="font-size: 15px; line-height: 1.6">
+                    Risks found in steering committees
+                  </p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <div
+                    class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#fee2e2]"
+                  >
+                    <i data-lucide="x" class="h-[14px] w-[14px] text-[#dc2626]"></i>
+                  </div>
+                  <p class="text-[#64748b]" style="font-size: 15px; line-height: 1.6">
+                    Opinions and anecdotes
+                  </p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <div
+                    class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#fee2e2]"
+                  >
+                    <i data-lucide="x" class="h-[14px] w-[14px] text-[#dc2626]"></i>
+                  </div>
+                  <p class="text-[#64748b]" style="font-size: 15px; line-height: 1.6">
+                    5+ tools, no unified view
+                  </p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <div
+                    class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#fee2e2]"
+                  >
+                    <i data-lucide="x" class="h-[14px] w-[14px] text-[#dc2626]"></i>
+                  </div>
+                  <p class="text-[#64748b]" style="font-size: 15px; line-height: 1.6">
+                    15–20 hours/week reporting burden
+                  </p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <div
+                    class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#fee2e2]"
+                  >
+                    <i data-lucide="x" class="h-[14px] w-[14px] text-[#dc2626]"></i>
+                  </div>
+                  <p class="text-[#64748b]" style="font-size: 15px; line-height: 1.6">
+                    Backlog spot-checked by scrum masters
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-2xl border border-[#bbf7d0] bg-[#f0fdf4] p-8">
+              <h3
+                class="mb-6 text-[#059669]"
+                style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase"
+              >
+                After ORION
+              </h3>
+              <div class="space-y-4">
+                <div class="flex items-start gap-3">
+                  <div
+                    class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#dcfce7]"
+                  >
+                    <i data-lucide="check" class="h-[14px] w-[14px] text-[#059669]"></i>
+                  </div>
+                  <p class="text-[#1e293b]" style="font-size: 15px; line-height: 1.6; font-weight: 500">
+                    30-second portfolio health check
+                  </p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <div
+                    class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#dcfce7]"
+                  >
+                    <i data-lucide="check" class="h-[14px] w-[14px] text-[#059669]"></i>
+                  </div>
+                  <p class="text-[#1e293b]" style="font-size: 15px; line-height: 1.6; font-weight: 500">
+                    AI signal detection between runs
+                  </p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <div
+                    class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#dcfce7]"
+                  >
+                    <i data-lucide="check" class="h-[14px] w-[14px] text-[#059669]"></i>
+                  </div>
+                  <p class="text-[#1e293b]" style="font-size: 15px; line-height: 1.6; font-weight: 500">
+                    Evidence-based, scored, trended
+                  </p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <div
+                    class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#dcfce7]"
+                  >
+                    <i data-lucide="check" class="h-[14px] w-[14px] text-[#059669]"></i>
+                  </div>
+                  <p class="text-[#1e293b]" style="font-size: 15px; line-height: 1.6; font-weight: 500">
+                    One platform, all signals normalized
+                  </p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <div
+                    class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#dcfce7]"
+                  >
+                    <i data-lucide="check" class="h-[14px] w-[14px] text-[#059669]"></i>
+                  </div>
+                  <p class="text-[#1e293b]" style="font-size: 15px; line-height: 1.6; font-weight: 500">
+                    Near-zero — insights always current
+                  </p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <div
+                    class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#dcfce7]"
+                  >
+                    <i data-lucide="check" class="h-[14px] w-[14px] text-[#059669]"></i>
+                  </div>
+                  <p class="text-[#1e293b]" style="font-size: 15px; line-height: 1.6; font-weight: 500">
+                    Every story scored by AI against Definition of Ready
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#f8fafc] py-20 md:py-28">
+        <div class="mx-auto max-w-[1200px] px-6">
+          <h2
+            class="mb-4 text-center text-[#0f172a]"
+            style="font-size: clamp(28px, 3.5vw, 40px); font-weight: 700; line-height: 1.2"
+          >
+            Why ORION Is Different
+          </h2>
+          <p
+            class="mx-auto mb-14 max-w-[550px] text-center text-[#64748b]"
+            style="font-size: 16px"
+          >
+            Five capabilities that no other platform combines in one product.
+          </p>
+
+          <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div
+              class="rounded-2xl border border-[#e2e8f0] bg-white p-8 transition-all hover:border-[#1E40AF]/20 hover:shadow-lg"
+            >
+              <div
+                class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#1E40AF]/10 to-[#059669]/10"
+              >
+                <i data-lucide="fingerprint" class="text-[#1E40AF]"></i>
+              </div>
+              <h3 class="mb-3 text-[#0f172a]" style="font-size: 18px; font-weight: 700">
+                Unified Health Scoring Across the Full Stack
+              </h3>
+              <p class="text-[#64748b]" style="font-size: 14px; line-height: 1.7">
+                One number. Ten dimensions. Full drill-down from portfolio to story level. No other
+                platform scores delivery, quality, security, and documentation in a single
+                composite.
+              </p>
+            </div>
+            <div
+              class="rounded-2xl border border-[#e2e8f0] bg-white p-8 transition-all hover:border-[#1E40AF]/20 hover:shadow-lg"
+            >
+              <div
+                class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#1E40AF]/10 to-[#059669]/10"
+              >
+                <i data-lucide="scan-search" class="text-[#1E40AF]"></i>
+              </div>
+              <h3 class="mb-3 text-[#0f172a]" style="font-size: 18px; font-weight: 700">
+                LLM-Powered Story-Level Backlog Assessment
+              </h3>
+              <p class="text-[#64748b]" style="font-size: 14px; line-height: 1.7">
+                AI reads every story and scores it against Definition of Ready. Not sampling. Not
+                heuristics. Every story, every sprint.
+              </p>
+            </div>
+            <div
+              class="rounded-2xl border border-[#e2e8f0] bg-white p-8 transition-all hover:border-[#1E40AF]/20 hover:shadow-lg"
+            >
+              <div
+                class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#1E40AF]/10 to-[#059669]/10"
+              >
+                <i data-lucide="git-branch" class="text-[#1E40AF]"></i>
+              </div>
+              <h3 class="mb-3 text-[#0f172a]" style="font-size: 18px; font-weight: 700">
+                Strategy-to-Execution Mapping with Benefit Realization
+              </h3>
+              <p class="text-[#64748b]" style="font-size: 14px; line-height: 1.7">
+                Strategies connect to initiatives, epics, and stories. Financial benefit
+                realization tracked against business cases. Boardroom to codebase.
+              </p>
+            </div>
+            <div
+              class="rounded-2xl border border-[#e2e8f0] bg-white p-8 transition-all hover:border-[#1E40AF]/20 hover:shadow-lg md:col-start-1"
+            >
+              <div
+                class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#1E40AF]/10 to-[#059669]/10"
+              >
+                <i data-lucide="trending-up" class="text-[#1E40AF]"></i>
+              </div>
+              <h3 class="mb-3 text-[#0f172a]" style="font-size: 18px; font-weight: 700">
+                AI-Generated Triage with Run-Over-Run Detection
+              </h3>
+              <p class="text-[#64748b]" style="font-size: 14px; line-height: 1.7">
+                Every run compared to the previous one. What changed, what's worsening, what
+                improved. Signals severity-ranked for leadership attention.
+              </p>
+            </div>
+            <div
+              class="rounded-2xl border border-[#e2e8f0] bg-white p-8 transition-all hover:border-[#1E40AF]/20 hover:shadow-lg"
+            >
+              <div
+                class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#1E40AF]/10 to-[#059669]/10"
+              >
+                <i data-lucide="message-circle" class="text-[#1E40AF]"></i>
+              </div>
+              <h3 class="mb-3 text-[#0f172a]" style="font-size: 18px; font-weight: 700">
+                RAG-Powered Conversational Intelligence
+              </h3>
+              <p class="text-[#64748b]" style="font-size: 14px; line-height: 1.7">
+                Ask questions in natural language. Get evidence-backed answers grounded in your
+                Confluence documentation and project data. With citations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="modules" class="py-20 md:py-28">
+        <div class="mx-auto max-w-[1200px] px-6">
+          <h2
+            class="mb-4 text-center text-[#0f172a]"
+            style="font-size: clamp(28px, 3.5vw, 40px); font-weight: 700; line-height: 1.2"
+          >
+            13 Modules. 37+ Screens. Every Decision Covered.
+          </h2>
+          <p
+            class="mx-auto mb-14 max-w-[600px] text-center text-[#64748b]"
+            style="font-size: 16px"
+          >
+            A comprehensive intelligence platform spanning engineering, strategy, operations, and
+            beyond.
+          </p>
+
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div class="rounded-2xl border border-[#e2e8f0] bg-white p-6 transition-all hover:border-[#1E40AF]/20 hover:shadow-md">
+              <div class="mb-4 flex items-start justify-between">
+                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-[#1E40AF]/10">
+                  <i data-lucide="layout-dashboard" class="text-[#1E40AF]"></i>
+                </div>
+              </div>
+              <h4 class="mb-1 text-[#0f172a]" style="font-size: 16px; font-weight: 700">Command Center</h4>
+              <p class="mb-2 text-[#1E40AF]" style="font-size: 12px; font-weight: 600">3 screens</p>
+              <p class="text-[#64748b]" style="font-size: 13px; line-height: 1.6">
+                Portfolio health, cross-board comparison, AI-powered briefings.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-[#e2e8f0] bg-white p-6 transition-all hover:border-[#1E40AF]/20 hover:shadow-md">
+              <div class="mb-4 flex items-start justify-between">
+                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-[#1E40AF]/10">
+                  <i data-lucide="code-2" class="text-[#1E40AF]"></i>
+                </div>
+              </div>
+              <h4 class="mb-1 text-[#0f172a]" style="font-size: 16px; font-weight: 700">Engineering</h4>
+              <p class="mb-2 text-[#1E40AF]" style="font-size: 12px; font-weight: 600">8 screens</p>
+              <p class="text-[#64748b]" style="font-size: 13px; line-height: 1.6">
+                Sprint analytics, backlog readiness, quality, capacity, flow, documentation, team
+                workload.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-[#e2e8f0] bg-white p-6 transition-all hover:border-[#1E40AF]/20 hover:shadow-md">
+              <div class="mb-4 flex items-start justify-between">
+                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-[#1E40AF]/10">
+                  <i data-lucide="map" class="text-[#1E40AF]"></i>
+                </div>
+              </div>
+              <h4 class="mb-1 text-[#0f172a]" style="font-size: 16px; font-weight: 700">Strategy</h4>
+              <p class="mb-2 text-[#1E40AF]" style="font-size: 12px; font-weight: 600">7 screens</p>
+              <p class="text-[#64748b]" style="font-size: 13px; line-height: 1.6">
+                Priorities, execution tracking, initiative workspace, benefits realization,
+                roadmap.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-[#e2e8f0] bg-white p-6 transition-all hover:border-[#1E40AF]/20 hover:shadow-md">
+              <div class="mb-4 flex items-start justify-between">
+                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-[#1E40AF]/10">
+                  <i data-lucide="cog" class="text-[#1E40AF]"></i>
+                </div>
+              </div>
+              <h4 class="mb-1 text-[#0f172a]" style="font-size: 16px; font-weight: 700">Operations</h4>
+              <p class="mb-2 text-[#1E40AF]" style="font-size: 12px; font-weight: 600">2 screens</p>
+              <p class="text-[#64748b]" style="font-size: 13px; line-height: 1.6">
+                Pipeline operations console and RAG-powered AI assistant chat.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-[#e2e8f0] bg-white p-6 transition-all hover:border-[#1E40AF]/20 hover:shadow-md">
+              <div class="mb-4 flex items-start justify-between">
+                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-[#1E40AF]/10">
+                  <i data-lucide="settings-2" class="text-[#1E40AF]"></i>
+                </div>
+              </div>
+              <h4 class="mb-1 text-[#0f172a]" style="font-size: 16px; font-weight: 700">
+                Administration
+              </h4>
+              <p class="mb-2 text-[#1E40AF]" style="font-size: 12px; font-weight: 600">6 screens</p>
+              <p class="text-[#64748b]" style="font-size: 13px; line-height: 1.6">
+                Settings, setup wizard, permissions, metrics reference, department config.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-dashed border-[#d1d5db] bg-[#fafafa] p-6 transition-all hover:border-[#94a3b8] hover:shadow-md">
+              <div class="mb-4 flex items-start justify-between">
+                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-[#f1f5f9]">
+                  <i data-lucide="users" class="text-[#94a3b8]"></i>
+                </div>
+                <span
+                  class="rounded-md border border-[#d1d5db] px-2 py-0.5 text-[#94a3b8]"
+                  style="font-size: 11px; font-weight: 600"
+                  >PREVIEW</span
+                >
+              </div>
+              <h4 class="mb-1 text-[#0f172a]" style="font-size: 16px; font-weight: 700">HR</h4>
+              <p class="mb-2 text-[#1E40AF]" style="font-size: 12px; font-weight: 600">3 screens</p>
+              <p class="text-[#94a3b8]" style="font-size: 13px; line-height: 1.6">
+                Workforce health, attrition analytics, recruitment pipeline.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-dashed border-[#d1d5db] bg-[#fafafa] p-6 transition-all hover:border-[#94a3b8] hover:shadow-md">
+              <div class="mb-4 flex items-start justify-between">
+                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-[#f1f5f9]">
+                  <i data-lucide="dollar-sign" class="text-[#94a3b8]"></i>
+                </div>
+                <span
+                  class="rounded-md border border-[#d1d5db] px-2 py-0.5 text-[#94a3b8]"
+                  style="font-size: 11px; font-weight: 600"
+                  >PREVIEW</span
+                >
+              </div>
+              <h4 class="mb-1 text-[#0f172a]" style="font-size: 16px; font-weight: 700">Finance</h4>
+              <p class="mb-2 text-[#1E40AF]" style="font-size: 12px; font-weight: 600">2 screens</p>
+              <p class="text-[#94a3b8]" style="font-size: 13px; line-height: 1.6">
+                Financial health, budget tracking, variance analysis.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-dashed border-[#d1d5db] bg-[#fafafa] p-6 transition-all hover:border-[#94a3b8] hover:shadow-md">
+              <div class="mb-4 flex items-start justify-between">
+                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-[#f1f5f9]">
+                  <i data-lucide="shopping-cart" class="text-[#94a3b8]"></i>
+                </div>
+                <span
+                  class="rounded-md border border-[#d1d5db] px-2 py-0.5 text-[#94a3b8]"
+                  style="font-size: 11px; font-weight: 600"
+                  >PREVIEW</span
+                >
+              </div>
+              <h4 class="mb-1 text-[#0f172a]" style="font-size: 16px; font-weight: 700">Sales</h4>
+              <p class="text-[#94a3b8]" style="font-size: 13px; line-height: 1.6">
+                Sales pipeline and revenue intelligence.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-dashed border-[#d1d5db] bg-[#fafafa] p-6 transition-all hover:border-[#94a3b8] hover:shadow-md">
+              <div class="mb-4 flex items-start justify-between">
+                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-[#f1f5f9]">
+                  <i data-lucide="heart-handshake" class="text-[#94a3b8]"></i>
+                </div>
+                <span
+                  class="rounded-md border border-[#d1d5db] px-2 py-0.5 text-[#94a3b8]"
+                  style="font-size: 11px; font-weight: 600"
+                  >PREVIEW</span
+                >
+              </div>
+              <h4 class="mb-1 text-[#0f172a]" style="font-size: 16px; font-weight: 700">
+                Customer Success
+              </h4>
+              <p class="text-[#94a3b8]" style="font-size: 13px; line-height: 1.6">
+                Customer health scoring and churn prediction.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-dashed border-[#d1d5db] bg-[#fafafa] p-6 transition-all hover:border-[#94a3b8] hover:shadow-md">
+              <div class="mb-4 flex items-start justify-between">
+                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-[#f1f5f9]">
+                  <i data-lucide="megaphone" class="text-[#94a3b8]"></i>
+                </div>
+                <span
+                  class="rounded-md border border-[#d1d5db] px-2 py-0.5 text-[#94a3b8]"
+                  style="font-size: 11px; font-weight: 600"
+                  >PREVIEW</span
+                >
+              </div>
+              <h4 class="mb-1 text-[#0f172a]" style="font-size: 16px; font-weight: 700">Marketing</h4>
+              <p class="text-[#94a3b8]" style="font-size: 13px; line-height: 1.6">
+                Campaign performance and attribution.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-dashed border-[#d1d5db] bg-[#fafafa] p-6 transition-all hover:border-[#94a3b8] hover:shadow-md">
+              <div class="mb-4 flex items-start justify-between">
+                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-[#f1f5f9]">
+                  <i data-lucide="user-round" class="text-[#94a3b8]"></i>
+                </div>
+                <span
+                  class="rounded-md border border-[#d1d5db] px-2 py-0.5 text-[#94a3b8]"
+                  style="font-size: 11px; font-weight: 600"
+                  >PREVIEW</span
+                >
+              </div>
+              <h4 class="mb-1 text-[#0f172a]" style="font-size: 16px; font-weight: 700">
+                People &amp; Culture
+              </h4>
+              <p class="text-[#94a3b8]" style="font-size: 13px; line-height: 1.6">
+                Engagement, DEI metrics, and culture health.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-dashed border-[#d1d5db] bg-[#fafafa] p-6 transition-all hover:border-[#94a3b8] hover:shadow-md">
+              <div class="mb-4 flex items-start justify-between">
+                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-[#f1f5f9]">
+                  <i data-lucide="scale" class="text-[#94a3b8]"></i>
+                </div>
+                <span
+                  class="rounded-md border border-[#d1d5db] px-2 py-0.5 text-[#94a3b8]"
+                  style="font-size: 11px; font-weight: 600"
+                  >PREVIEW</span
+                >
+              </div>
+              <h4 class="mb-1 text-[#0f172a]" style="font-size: 16px; font-weight: 700">
+                Legal &amp; Compliance
+              </h4>
+              <p class="text-[#94a3b8]" style="font-size: 13px; line-height: 1.6">
+                Risk register, audit trails, compliance scoring.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="roi" class="bg-gradient-to-b from-[#0f172a] to-[#1e293b] py-20 md:py-28">
+        <div class="mx-auto max-w-[1200px] px-6">
+          <h2
+            class="mb-4 text-center text-white"
+            style="font-size: clamp(28px, 3.5vw, 40px); font-weight: 700; line-height: 1.2"
+          >
+            Measurable Return on Investment
+          </h2>
+          <p
+            class="mx-auto mb-14 max-w-[550px] text-center text-[#94a3b8]"
+            style="font-size: 16px"
+          >
+            Real results from enterprise engineering organizations using ORION.
+          </p>
+
+          <div class="mb-14 grid gap-6 md:grid-cols-3">
+            <div
+              class="rounded-2xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-sm transition-all hover:bg-white/10"
+            >
+              <div
+                class="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-[#1E40AF]/20"
+              >
+                <i data-lucide="clock-3" class="text-[#1E40AF]"></i>
+              </div>
+              <p class="mb-2 text-[#1E40AF]" style="font-size: 48px; font-weight: 800; line-height: 1">
+                80–120
+              </p>
+              <p class="mb-3 text-white" style="font-size: 18px; font-weight: 600">
+                Days/Year Reclaimed
+              </p>
+              <p class="text-[#94a3b8]" style="font-size: 14px; line-height: 1.7">
+                From reporting theater. Directors and managers stop assembling slides and start
+                removing impediments.
+              </p>
+            </div>
+            <div
+              class="rounded-2xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-sm transition-all hover:bg-white/10"
+            >
+              <div
+                class="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-[#059669]/20"
+              >
+                <i data-lucide="trending-down" class="text-[#059669]"></i>
+              </div>
+              <p class="mb-2 text-[#059669]" style="font-size: 48px; font-weight: 800; line-height: 1">
+                30–40%
+              </p>
+              <p class="mb-3 text-white" style="font-size: 18px; font-weight: 600">
+                Fewer Escalations
+              </p>
+              <p class="text-[#94a3b8]" style="font-size: 14px; line-height: 1.7">
+                Early AI signal detection expands the intervention window from hours to days.
+              </p>
+            </div>
+            <div
+              class="rounded-2xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-sm transition-all hover:bg-white/10"
+            >
+              <div
+                class="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-[#F59E0B]/20"
+              >
+                <i data-lucide="target" class="text-[#F59E0B]"></i>
+              </div>
+              <p class="mb-2 text-[#F59E0B]" style="font-size: 48px; font-weight: 800; line-height: 1">
+                2–3×
+              </p>
+              <p class="mb-3 text-white" style="font-size: 18px; font-weight: 600">
+                Sprint Predictability
+              </p>
+              <p class="text-[#94a3b8]" style="font-size: 14px; line-height: 1.7">
+                Evidence-based planning. Better commitments. More reliable delivery.
+              </p>
+            </div>
+          </div>
+
+          <div class="mx-auto max-w-[700px] text-center">
+            <p class="text-[#94a3b8]" style="font-size: 15px; line-height: 1.8">
+              The compound effect of faster decisions, earlier risk detection, and better resource
+              allocation creates exponential returns over quarters and years. Organizations using
+              ORION report measurable improvement within the first sprint cycle.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="compare" class="bg-[#f8fafc] py-20 md:py-28">
+        <div class="mx-auto max-w-[1200px] px-6">
+          <h2
+            class="mb-4 text-center text-[#0f172a]"
+            style="font-size: clamp(28px, 3.5vw, 40px); font-weight: 700; line-height: 1.2"
+          >
+            ORION Does Not Compete With Your Tools. It Completes Them.
+          </h2>
+          <p
+            class="mx-auto mb-14 max-w-[600px] text-center text-[#64748b]"
+            style="font-size: 16px"
+          >
+            See how ORION fills the gaps that existing tools leave open.
+          </p>
+
+          <div class="overflow-x-auto">
+            <table class="min-w-[700px] w-full overflow-hidden rounded-2xl border border-[#e2e8f0] bg-white">
+              <thead>
+                <tr class="border-b border-[#e2e8f0]">
+                  <th
+                    class="px-6 py-4 text-left text-[#64748b]"
+                    style="font-size: 13px; font-weight: 600"
+                  >
+                    Dimension
+                  </th>
+                  <th
+                    class="px-3 py-4 text-center text-[#64748b]"
+                    style="font-size: 13px; font-weight: 600"
+                  >
+                    Jira / Jira Align
+                  </th>
+                  <th
+                    class="px-3 py-4 text-center text-[#64748b]"
+                    style="font-size: 13px; font-weight: 600"
+                  >
+                    BI Tools
+                  </th>
+                  <th
+                    class="px-3 py-4 text-center text-[#64748b]"
+                    style="font-size: 13px; font-weight: 600"
+                  >
+                    PMO Tools
+                  </th>
+                  <th
+                    class="px-3 py-4 text-center text-[#64748b]"
+                    style="font-size: 13px; font-weight: 600"
+                  >
+                    Eng Analytics
+                  </th>
+                  <th
+                    class="bg-[#1E40AF]/5 px-3 py-4 text-center text-[#1E40AF]"
+                    style="font-size: 13px; font-weight: 600"
+                  >
+                    ORION
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-[#f1f5f9]">
+                  <td class="px-6 py-4 text-[#334155]" style="font-size: 14px; font-weight: 500">
+                    Unified Health Score
+                  </td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="minus" class="mx-auto text-[#d1d5db]"></i></td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="minus" class="mx-auto text-[#d1d5db]"></i></td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="minus" class="mx-auto text-[#d1d5db]"></i></td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="minus" class="mx-auto text-[#d1d5db]"></i></td>
+                  <td class="bg-[#1E40AF]/5 px-3 py-4 text-center"><i data-lucide="check" class="mx-auto text-[#1E40AF]"></i></td>
+                </tr>
+                <tr class="border-b border-[#f1f5f9]">
+                  <td class="px-6 py-4 text-[#334155]" style="font-size: 14px; font-weight: 500">
+                    LLM-Powered Analysis
+                  </td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="minus" class="mx-auto text-[#d1d5db]"></i></td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="minus" class="mx-auto text-[#d1d5db]"></i></td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="minus" class="mx-auto text-[#d1d5db]"></i></td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="minus" class="mx-auto text-[#d1d5db]"></i></td>
+                  <td class="bg-[#1E40AF]/5 px-3 py-4 text-center"><i data-lucide="check" class="mx-auto text-[#1E40AF]"></i></td>
+                </tr>
+                <tr class="border-b border-[#f1f5f9]">
+                  <td class="px-6 py-4 text-[#334155]" style="font-size: 14px; font-weight: 500">
+                    Strategy-to-Execution
+                  </td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="minus" class="mx-auto text-[#d1d5db]"></i></td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="minus" class="mx-auto text-[#d1d5db]"></i></td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="check" class="mx-auto text-[#059669]"></i></td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="minus" class="mx-auto text-[#d1d5db]"></i></td>
+                  <td class="bg-[#1E40AF]/5 px-3 py-4 text-center"><i data-lucide="check" class="mx-auto text-[#1E40AF]"></i></td>
+                </tr>
+                <tr class="border-b border-[#f1f5f9]">
+                  <td class="px-6 py-4 text-[#334155]" style="font-size: 14px; font-weight: 500">
+                    Cross-Tool Integration
+                  </td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="minus" class="mx-auto text-[#d1d5db]"></i></td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="check" class="mx-auto text-[#059669]"></i></td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="minus" class="mx-auto text-[#d1d5db]"></i></td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="check" class="mx-auto text-[#059669]"></i></td>
+                  <td class="bg-[#1E40AF]/5 px-3 py-4 text-center"><i data-lucide="check" class="mx-auto text-[#1E40AF]"></i></td>
+                </tr>
+                <tr class="border-b border-[#f1f5f9]">
+                  <td class="px-6 py-4 text-[#334155]" style="font-size: 14px; font-weight: 500">
+                    Time to Value (&lt;1 week)
+                  </td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="check" class="mx-auto text-[#059669]"></i></td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="minus" class="mx-auto text-[#d1d5db]"></i></td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="minus" class="mx-auto text-[#d1d5db]"></i></td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="minus" class="mx-auto text-[#d1d5db]"></i></td>
+                  <td class="bg-[#1E40AF]/5 px-3 py-4 text-center"><i data-lucide="check" class="mx-auto text-[#1E40AF]"></i></td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-[#334155]" style="font-size: 14px; font-weight: 500">
+                    Audience: CTO to Scrum Master
+                  </td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="minus" class="mx-auto text-[#d1d5db]"></i></td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="minus" class="mx-auto text-[#d1d5db]"></i></td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="minus" class="mx-auto text-[#d1d5db]"></i></td>
+                  <td class="px-3 py-4 text-center"><i data-lucide="minus" class="mx-auto text-[#d1d5db]"></i></td>
+                  <td class="bg-[#1E40AF]/5 px-3 py-4 text-center"><i data-lucide="check" class="mx-auto text-[#1E40AF]"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="demo" class="relative overflow-hidden py-20 md:py-28">
+        <div
+          class="pointer-events-none absolute inset-0 bg-gradient-to-b from-white via-[#eff6ff] to-white"
+        ></div>
+        <div class="relative mx-auto max-w-[1200px] px-6 text-center">
+          <h2
+            class="mb-4 text-[#0f172a]"
+            style="font-size: clamp(28px, 3.5vw, 40px); font-weight: 700; line-height: 1.2"
+          >
+            See ORION in Action
+          </h2>
+          <p
+            class="mx-auto mb-10 max-w-[550px] text-[#475569]"
+            style="font-size: 17px; line-height: 1.7"
+          >
+            Discover how ORION transforms engineering leadership from opinion-based to
+            evidence-based.
+          </p>
+
+          <a
+            href="#"
+            class="mb-14 inline-flex items-center rounded-xl bg-[#1E40AF] px-10 py-4 text-white transition-all hover:bg-[#1e3a8a] hover:shadow-xl"
+            style="font-size: 18px; font-weight: 600"
+            >Request a Demo</a
+          >
+
+          <div class="mx-auto grid max-w-[800px] grid-cols-2 gap-4 md:grid-cols-4">
+            <div class="group cursor-pointer overflow-hidden rounded-xl border border-[#e2e8f0] transition-all hover:shadow-lg">
+              <img
+                src="./assets/images/portfolio-dashboard.jpg"
+                alt="Portfolio Dashboard"
+                class="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <p class="bg-white py-2.5 text-[#334155]" style="font-size: 12px; font-weight: 600">
+                Portfolio Dashboard
+              </p>
+            </div>
+            <div class="group cursor-pointer overflow-hidden rounded-xl border border-[#e2e8f0] transition-all hover:shadow-lg">
+              <img
+                src="./assets/images/ai-insights.jpg"
+                alt="AI Insights"
+                class="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <p class="bg-white py-2.5 text-[#334155]" style="font-size: 12px; font-weight: 600">
+                AI Insights
+              </p>
+            </div>
+            <div class="group cursor-pointer overflow-hidden rounded-xl border border-[#e2e8f0] transition-all hover:shadow-lg">
+              <img
+                src="./assets/images/strategy-execution.jpg"
+                alt="Strategy Execution"
+                class="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <p class="bg-white py-2.5 text-[#334155]" style="font-size: 12px; font-weight: 600">
+                Strategy Execution
+              </p>
+            </div>
+            <div class="group cursor-pointer overflow-hidden rounded-xl border border-[#e2e8f0] transition-all hover:shadow-lg">
+              <img
+                src="./assets/images/backlog-readiness.jpg"
+                alt="Backlog Readiness"
+                class="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <p class="bg-white py-2.5 text-[#334155]" style="font-size: 12px; font-weight: 600">
+                Backlog Readiness
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#0f172a] pb-8 pt-16 text-white">
+      <div class="mx-auto max-w-[1200px] px-6">
+        <div class="mb-14 grid gap-10 md:grid-cols-5">
+          <div class="md:col-span-2">
+            <div class="mb-4 flex items-center gap-2">
+              <div
+                class="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#1E40AF] to-[#059669]"
+              >
+                <span class="text-white" style="font-size: 14px; font-weight: 800">O</span>
+              </div>
+              <span style="font-size: 20px; font-weight: 700">ORION</span>
+            </div>
+            <p class="mb-6 text-[#94a3b8]" style="font-size: 14px; line-height: 1.7">
+              Operational Readiness, Insights,<br />
+              Outcomes &amp; Navigation
+            </p>
+            <div class="flex gap-3">
+              <a
+                href="#"
+                class="flex h-9 w-9 items-center justify-center rounded-lg bg-white/10 transition-colors hover:bg-white/20"
+                aria-label="LinkedIn"
+              >
+                <i data-lucide="linkedin"></i>
+              </a>
+              <a
+                href="#"
+                class="flex h-9 w-9 items-center justify-center rounded-lg bg-white/10 transition-colors hover:bg-white/20"
+                aria-label="Twitter"
+              >
+                <i data-lucide="twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="flex h-9 w-9 items-center justify-center rounded-lg bg-white/10 transition-colors hover:bg-white/20"
+                aria-label="GitHub"
+              >
+                <i data-lucide="github"></i>
+              </a>
+              <a
+                href="#"
+                class="flex h-9 w-9 items-center justify-center rounded-lg bg-white/10 transition-colors hover:bg-white/20"
+                aria-label="YouTube"
+              >
+                <i data-lucide="youtube"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="mb-4 text-white" style="font-size: 14px; font-weight: 600; letter-spacing: 0.04em">
+              Product
+            </h4>
+            <ul class="space-y-2.5">
+              <li><a href="#" class="text-[#94a3b8] transition-colors hover:text-white" style="font-size: 14px">Overview</a></li>
+              <li><a href="#" class="text-[#94a3b8] transition-colors hover:text-white" style="font-size: 14px">Capabilities</a></li>
+              <li><a href="#" class="text-[#94a3b8] transition-colors hover:text-white" style="font-size: 14px">Demo</a></li>
+              <li><a href="#" class="text-[#94a3b8] transition-colors hover:text-white" style="font-size: 14px">Pricing</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="mb-4 text-white" style="font-size: 14px; font-weight: 600; letter-spacing: 0.04em">
+              Resources
+            </h4>
+            <ul class="space-y-2.5">
+              <li><a href="#" class="text-[#94a3b8] transition-colors hover:text-white" style="font-size: 14px">Documentation</a></li>
+              <li><a href="#" class="text-[#94a3b8] transition-colors hover:text-white" style="font-size: 14px">Getting Started</a></li>
+              <li><a href="#" class="text-[#94a3b8] transition-colors hover:text-white" style="font-size: 14px">FAQ</a></li>
+              <li><a href="#" class="text-[#94a3b8] transition-colors hover:text-white" style="font-size: 14px">Blog</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="mb-4 text-white" style="font-size: 14px; font-weight: 600; letter-spacing: 0.04em">
+              Company
+            </h4>
+            <ul class="space-y-2.5">
+              <li><a href="#" class="text-[#94a3b8] transition-colors hover:text-white" style="font-size: 14px">About</a></li>
+              <li><a href="#" class="text-[#94a3b8] transition-colors hover:text-white" style="font-size: 14px">Contact</a></li>
+              <li><a href="#" class="text-[#94a3b8] transition-colors hover:text-white" style="font-size: 14px">Careers</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row">
+          <p class="text-[#64748b]" style="font-size: 13px">© 2026 ORION Platform. All rights reserved.</p>
+          <div class="flex gap-6">
+            <a href="#" class="text-[#64748b] transition-colors hover:text-[#94a3b8]" style="font-size: 13px">Privacy Policy</a>
+            <a href="#" class="text-[#64748b] transition-colors hover:text-[#94a3b8]" style="font-size: 13px">Terms of Service</a>
+            <a href="#" class="text-[#64748b] transition-colors hover:text-[#94a3b8]" style="font-size: 13px">Security</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/lucide.min.js"></script>
+    <script src="./assets/site.js"></script>
+  </body>
+</html>

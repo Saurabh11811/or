@@ -1,0 +1,52 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+#site-nav.nav-scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+}
+
+[data-lucide] {
+  width: 22px;
+  height: 22px;
+  stroke-width: 2;
+}
+
+#mobile-toggle [data-lucide] {
+  width: 24px;
+  height: 24px;
+}
+
+#mobile-menu [data-lucide],
+table [data-lucide],
+footer [data-lucide] {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 767px) {
+  html {
+    scroll-padding-top: 84px;
+  }
+}
